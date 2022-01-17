@@ -1,4 +1,5 @@
 {
+  "homepage": "http://me-hana.github.io",
   "name": "hana-page",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,11 @@
   "devDependencies": {
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11"
+    "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
+    "mini-css-extract-plugin": "2.4.5"
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
