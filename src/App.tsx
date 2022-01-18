@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+
+import MyView from "./MyView";
+import AppHeader from "./section/AppHeader";
 
 function App() {
   return (
     <>
-    <div>
-      Hana's Portfolio
-    </div>
+      <AppHeader />
+      <MyView />
     </>
   );
 }
